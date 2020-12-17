@@ -1,0 +1,93 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+}
+
+.parent{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: center;
+}
+
+.child-1{
+    width:25% ;
+    margin: 1%;
+    padding: 1%;
+    border:1px solid #ddd;
+    text-align:center ;
+    box-shadow: 0px 8px 8px -8px #000;
+    height: 380px;
+    
+}
+
+.child-2{
+    width:65%;
+    margin:1%;
+    padding: 1%;
+    border:1px solid #ddd;
+    box-shadow: 0px 8px 8px -8px #000;
+
+}
+
+.child-1 img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.child-1 a{
+    display: block;
+    text-decoration: none;
+    color:#ca10b6;
+}
+
+.child-1 h2{
+    color:#900c3f;
+    text-shadow: 3px 3px 3px #ddd;
+}
+
+.child-1 em{
+    color:#676560;
+}
+
+.child-2 h2{
+    color:#900c3f;
+    text-shadow: 3px 3px 3px #ddd;
+}
+
+.table-responsive{
+    overflow-x: auto;
+    opacity: 0.5;
+}
+
+table{
+    width: 90%;
+}
+
+thead{
+    background-color:#ad7f2a;;
+}
+table thead tr th{
+    padding: 1%;
+}
+
+table tbody tr td{
+    padding: .5%;
+}
+
+/*Small Scale Devices*/
+@media only screen and (min-width:360px) and (max-width:640px)
+{
+    .child-1,
+    .child-2{
+        width:90%;
+    }
+}
+
+/*Medium Scale Devices*/
+@media only screen and (min-width:641px) and (max-width:1023px)
+{
+    .child-1,
+    .child-2{
+        width:45%;
+    }
+}
